@@ -64,6 +64,11 @@ ul {
   font-style: normal;
 }
 /* Site Nav */
+.header {
+  height: 100px;
+  border-bottom: 1px solid #ececec;
+  top: 81px;
+}
 .top-nav {
   display: flex;
   align-items: center;
@@ -85,7 +90,7 @@ ul {
   padding-bottom: 32px;
 }
 
-.site-nav .current {
+.site-nav .item .current {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -188,21 +193,10 @@ ul {
   margin-bottom: 0;
   width: 280px;
 }
-.features-pic-1,
-.features-pic-2 {
+.features-pic {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 55px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.features-pic-3 {
-  margin-bottom: 63.11px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.features-pic-4 {
-  margin-bottom: 59.11px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .features .title,
 .picturetext {
@@ -284,6 +278,23 @@ ul {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+}
+.team-list {
+  width: 270px;
+  height: 422px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+/* Social Media for our team */
+.social-media-team {
+  display: flex;
+  justify-content: center;
+}
+.team-sm-list {
+  margin-right: 34px;
 }
 /* Our Clients */
 .clients {
@@ -425,24 +436,19 @@ ul {
   margin-left: auto;
   margin-left: auto;
 }
-.works {
-  text-decoration: none;
-}
-.section-descrp {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--primary-text-color);
-}
+
 .portfolio-works-list {
   display: flex;
   flex-wrap: wrap;
 }
 .portfolio-works {
   margin-right: 30px;
-  width: 380px;
+  width: 370px;
+  height: 404px;
+
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .portfolio-works:nth-child(3n) {
   margin-right: 0;
@@ -450,14 +456,31 @@ ul {
 .portfolio-works:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
+.works {
+  text-decoration: none;
+}
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
   color: var(--title-text-color);
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+}
+.section-descrp {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--primary-text-color);
 }
