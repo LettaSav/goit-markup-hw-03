@@ -183,6 +183,13 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -262,7 +269,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.our-people {
+.our-peopel {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
