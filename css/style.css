@@ -34,7 +34,8 @@ ul {
 .our-job img,
 .our-people img,
 .social-media-team img,
-.our-clients img {
+.our-clients img,
+.portfolio-works img {
   display: block;
 }
 .container {
@@ -269,8 +270,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.our-peopel {
-  width: 1200px;
+.our-people {
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -301,7 +302,7 @@ ul {
 }
 .team-list {
   width: 270px;
-  height: 422px;
+
   align-items: center;
   text-align: center;
 
@@ -328,6 +329,10 @@ ul {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.clients > .container {
+  width: 1187px;
 }
 .our-clients li {
   border: 1px solid #afb1b8;
@@ -459,8 +464,12 @@ footer-social {
 .portfolio-section-style {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-works-list {
@@ -485,6 +494,10 @@ footer-social {
 .works {
   text-decoration: none;
 }
+.portfolio-works {
+  overflow: hidden;
+}
+
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
