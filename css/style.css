@@ -12,8 +12,8 @@ html {
   box-sizing: border-box;
 }
 *,
-*: :before,
-*: :after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 body {
@@ -48,6 +48,8 @@ ul {
 .button,
 .hero-button {
   font-family: inherit;
+
+  cursor: pointer;
 }
 /* Logo */
 .logo,
@@ -106,6 +108,8 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+
+  cursor: pointer;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -194,6 +198,28 @@ ul {
   padding-top: 94px;
   padding-bottom: 47px;
 }
+.features-list::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sputnik::before {
+  background-image: url(../img/sputnik1.svg);
+}
+.clocks::before {
+  background-image: url(../img/clocks1.svg);
+}
+.laptop::before {
+  background-image: url(../img/laptop1.svg);
+}
+.human::before {
+  background-image: url(../img/human1.svg);
+}
 .features .features-list + .features-list {
   margin-left: 30px;
 }
@@ -202,14 +228,6 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   width: 270px;
-}
-.features-pic {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 55px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
 }
 .features .title,
 .picturetext {
@@ -223,8 +241,8 @@ ul {
 .picturetext {
   margin-bottom: 0px;
 }
-.title {
-  margin-top: 0;
+.features-list .title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -411,6 +429,8 @@ ul {
 footer-social {
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 .social-network {
   display: block;
@@ -441,6 +461,9 @@ footer-social {
     0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 6px 22px;
+
+  outline: none;
+  cursor: pointer;
 }
 .section .button:hover,
 .section .button:focus {
